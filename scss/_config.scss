@@ -33,3 +33,22 @@ a {
   display: block;
   text-decoration: none;
 }
+
+section:not(.hero) {
+  padding: 5rem 0;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem 3rem;
+  display: inline-block;
+  transition: all .5s;
+}

@@ -115,16 +115,14 @@
   width: calc(100% - 26rem);
   transform: translateX(26rem);
 
-  section:not(.hero) {
-    padding: 5rem 0;
-  }
-
+  // Hero styles 
   .hero {
     height: 100vh;
     background: url("../images/hero_background.jpg") bottom center/cover;
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 
     .name-heading {
       position: absolute;
@@ -182,6 +180,65 @@
           border-bottom: 2px solid $light-color;
           transform: rotate(45deg);
           animation: arrow-down 1s linear infinite;
+        }
+      }
+    }
+  }
+
+  // About Styles 
+  .about-me {
+    .heading-group {
+      color: $dark-color;
+      margin-bottom: 5rem;
+
+      .section-head-small {
+        display: block;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #999;
+        letter-spacing: 3px;
+        margin-bottom: 1rem;
+      }
+      .section-head-large {
+        font-size: 1.8rem;
+        font-family: $heading-font-family;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+      }
+    }
+    .about-me-intro {
+      .intro-description {
+        p {
+          &:not(:last-child){
+            margin-bottom: 2rem;
+          }
+          span {
+            font-family: $heading-font-family;
+            font-weight: bold;
+            color: $dark-color;
+          }
+        }
+      }
+      .call-to-action {
+        background: $yellow-color;
+        margin-top: 5rem;
+        padding: 3rem;
+        color: $dark-color;
+
+        p {
+          font-size: 2.4rem;
+          font-weight: 300;
+          margin-bottom: 2rem;
+        }
+
+        .cta-btn {
+          color: $dark-color;
+          border: 1px solid $dark-color;
+
+          &:hover {
+            color: $light-color;
+            background: $dark-color;
+          }
         }
       }
     }

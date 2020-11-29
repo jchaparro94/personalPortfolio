@@ -15,6 +15,22 @@ a {
   display: block;
   text-decoration: none; }
 
+section:not(.hero) {
+  padding: 5rem 0; }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem; }
+
+.btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem 3rem;
+  display: inline-block;
+  transition: all .5s; }
+
 .hamburger-menu {
   display: none; }
 
@@ -98,14 +114,13 @@ a {
 .main {
   width: calc(100% - 26rem);
   transform: translateX(26rem); }
-  .main section:not(.hero) {
-    padding: 5rem 0; }
   .main .hero {
     height: 100vh;
     background: url("../images/hero_background.jpg") bottom center/cover;
     position: relative;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    overflow: hidden; }
     .main .hero .name-heading {
       position: absolute;
       top: 35%;
@@ -154,6 +169,42 @@ a {
         border-bottom: 2px solid #f4f4f4;
         transform: rotate(45deg);
         animation: arrow-down 1s linear infinite; }
+  .main .about-me .heading-group {
+    color: #262626;
+    margin-bottom: 5rem; }
+    .main .about-me .heading-group .section-head-small {
+      display: block;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #999;
+      letter-spacing: 3px;
+      margin-bottom: 1rem; }
+    .main .about-me .heading-group .section-head-large {
+      font-size: 1.8rem;
+      font-family: "Playfair Display", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .5rem; }
+  .main .about-me .about-me-intro .intro-description p:not(:last-child) {
+    margin-bottom: 2rem; }
+  .main .about-me .about-me-intro .intro-description p span {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold;
+    color: #262626; }
+  .main .about-me .about-me-intro .call-to-action {
+    background: #f9bf3f;
+    margin-top: 5rem;
+    padding: 3rem;
+    color: #262626; }
+    .main .about-me .about-me-intro .call-to-action p {
+      font-size: 2.4rem;
+      font-weight: 300;
+      margin-bottom: 2rem; }
+    .main .about-me .about-me-intro .call-to-action .cta-btn {
+      color: #262626;
+      border: 1px solid #262626; }
+      .main .about-me .about-me-intro .call-to-action .cta-btn:hover {
+        color: #f4f4f4;
+        background: #262626; }
 
 @keyframes move-wheel {
   0% {
