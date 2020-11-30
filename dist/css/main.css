@@ -23,6 +23,22 @@ section:not(.hero) {
   margin: 0 auto;
   padding: 0 3rem; }
 
+.heading-group {
+  color: #262626;
+  margin-bottom: 5rem; }
+  .heading-group .section-head-small {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #999;
+    letter-spacing: 3px;
+    margin-bottom: 1rem; }
+  .heading-group .section-head-large {
+    font-size: 1.8rem;
+    font-family: "Playfair Display", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5rem; }
+
 .btn {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -30,6 +46,14 @@ section:not(.hero) {
   padding: 1rem 3rem;
   display: inline-block;
   transition: all .5s; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.5rem; }
+
+.margin-top {
+  margin-top: 5rem; }
 
 .hamburger-menu {
   display: none; }
@@ -169,21 +193,6 @@ section:not(.hero) {
         border-bottom: 2px solid #f4f4f4;
         transform: rotate(45deg);
         animation: arrow-down 1s linear infinite; }
-  .main .about-me .heading-group {
-    color: #262626;
-    margin-bottom: 5rem; }
-    .main .about-me .heading-group .section-head-small {
-      display: block;
-      font-size: 1rem;
-      text-transform: uppercase;
-      color: #999;
-      letter-spacing: 3px;
-      margin-bottom: 1rem; }
-    .main .about-me .heading-group .section-head-large {
-      font-size: 1.8rem;
-      font-family: "Playfair Display", sans-serif;
-      text-transform: uppercase;
-      letter-spacing: .5rem; }
   .main .about-me .about-me-intro .intro-description p:not(:last-child) {
     margin-bottom: 2rem; }
   .main .about-me .about-me-intro .intro-description p span {
@@ -205,6 +214,128 @@ section:not(.hero) {
       .main .about-me .about-me-intro .call-to-action .cta-btn:hover {
         color: #f4f4f4;
         background: #262626; }
+  .main .my-expertise .grid-item {
+    background: #f4f4f4;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-bottom: 3px solid transparent;
+    position: relative; }
+    .main .my-expertise .grid-item .item-skill {
+      width: calc(100% + 1rem);
+      height: 5rem;
+      position: absolute;
+      top: 1rem;
+      left: -1rem;
+      display: flex; }
+      .main .my-expertise .grid-item .item-skill::before {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        left: -.99rem;
+        border: 1rem solid transparent;
+        z-index: -1; }
+      .main .my-expertise .grid-item .item-skill .skill-name {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #f4f4f4;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: auto; }
+    .main .my-expertise .grid-item.orange {
+      border-bottom-color: #ec5453; }
+      .main .my-expertise .grid-item.orange i {
+        color: #ec5453; }
+      .main .my-expertise .grid-item.orange .item-skill {
+        background-color: #ec5453; }
+        .main .my-expertise .grid-item.orange .item-skill::before {
+          border-right-color: #ec5453; }
+    .main .my-expertise .grid-item.blue {
+      border-bottom-color: #2c98f0; }
+      .main .my-expertise .grid-item.blue i {
+        color: #2c98f0; }
+      .main .my-expertise .grid-item.blue .item-skill {
+        background-color: #2c98f0; }
+        .main .my-expertise .grid-item.blue .item-skill::before {
+          border-right-color: #2c98f0; }
+    .main .my-expertise .grid-item.yellow {
+      border-bottom-color: #f9bf3f; }
+      .main .my-expertise .grid-item.yellow i {
+        color: #f9bf3f; }
+      .main .my-expertise .grid-item.yellow .item-skill {
+        background-color: #f9bf3f; }
+        .main .my-expertise .grid-item.yellow .item-skill::before {
+          border-right-color: #f9bf3f; }
+    .main .my-expertise .grid-item.purple {
+      border-bottom-color: #a84cb8; }
+      .main .my-expertise .grid-item.purple .item-skill {
+        background-color: #a84cb8; }
+        .main .my-expertise .grid-item.purple .item-skill::before {
+          border-right-color: #a84cb8; }
+    .main .my-expertise .grid-item.dark-blue {
+      border-bottom-color: #4054b2; }
+      .main .my-expertise .grid-item.dark-blue .item-skill {
+        background-color: #4054b2; }
+        .main .my-expertise .grid-item.dark-blue .item-skill::before {
+          border-right-color: #4054b2; }
+    .main .my-expertise .grid-item .item-icon {
+      display: block;
+      font-size: 3.6rem;
+      margin-bottom: 1rem; }
+    .main .my-expertise .grid-item .item-heading {
+      font-size: 2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 2rem; }
+    .main .my-expertise .grid-item .skill-description {
+      margin-top: 5rem;
+      padding: 3rem 0;
+      line-height: 2; }
+  .main .motto {
+    height: 35vh;
+    background: url("../images/section_background.jpg") bottom/cover;
+    position: relative;
+    z-index: 1; }
+    .main .motto::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    .main .motto .container {
+      height: 100%;
+      display: flex; }
+      .main .motto .container .quote-wrapper {
+        margin: auto;
+        max-width: 50rem;
+        text-align: center;
+        color: #f4f4f4; }
+        .main .motto .container .quote-wrapper .quote {
+          font-size: 2rem;
+          font-weight: 300;
+          padding: .3rem;
+          position: relative; }
+          .main .motto .container .quote-wrapper .quote::before, .main .motto .container .quote-wrapper .quote::after {
+            position: absolute;
+            font-size: 15rem;
+            width: 5rem;
+            height: 5rem;
+            font-family: sans-serif; }
+          .main .motto .container .quote-wrapper .quote::before {
+            content: open-quote;
+            top: -5rem;
+            left: -6rem; }
+          .main .motto .container .quote-wrapper .quote::after {
+            content: close-quote;
+            bottom: -.5rem;
+            right: -6rem; }
+        .main .motto .container .quote-wrapper .quote-by {
+          display: block;
+          text-align: center;
+          margin-top: 2rem; }
 
 @keyframes move-wheel {
   0% {

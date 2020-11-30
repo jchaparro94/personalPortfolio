@@ -44,6 +44,26 @@ section:not(.hero) {
   padding: 0 3rem;
 }
 
+.heading-group {
+  color: $dark-color;
+  margin-bottom: 5rem;
+
+  .section-head-small {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #999;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+  .section-head-large {
+    font-size: 1.8rem;
+    font-family: $heading-font-family;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+  }
+}
+
 .btn {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -51,4 +71,14 @@ section:not(.hero) {
   padding: 1rem 3rem;
   display: inline-block;
   transition: all .5s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.5rem;
+}
+
+.margin-top {
+  margin-top: 5rem;
 }
