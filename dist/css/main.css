@@ -336,6 +336,119 @@ section:not(.hero) {
           display: block;
           text-align: center;
           margin-top: 2rem; }
+  .main .work-experience .timeline {
+    position: relative; }
+    .main .work-experience .timeline::before, .main .work-experience .timeline::after {
+      content: "";
+      position: absolute; }
+    .main .work-experience .timeline::before {
+      width: .5rem;
+      height: 100%;
+      background-color: #f2f3f7;
+      border-radius: 1rem;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%); }
+    .main .work-experience .timeline::after {
+      width: 2rem;
+      height: 2rem;
+      border: 0.5rem solid #f2f3f7;
+      border-radius: 50%;
+      bottom: -2.5rem;
+      left: -1.2rem; }
+    .main .work-experience .timeline .timeline-item {
+      background-color: #f2f3f7;
+      padding: 2.2rem;
+      margin-left: 3.5rem;
+      margin-bottom: 2rem;
+      position: relative; }
+      .main .work-experience .timeline .timeline-item::before, .main .work-experience .timeline .timeline-item::after {
+        content: "";
+        position: absolute; }
+      .main .work-experience .timeline .timeline-item::before {
+        top: .5rem;
+        left: -2rem;
+        border: 1rem solid transparent;
+        border-right-color: #f2f3f7; }
+      .main .work-experience .timeline .timeline-item::after {
+        width: 3rem;
+        height: 3rem;
+        background: #f2f3f7;
+        border-radius: 50%;
+        top: -.3rem;
+        left: -4.7rem; }
+      .main .work-experience .timeline .timeline-item .timeline-heading {
+        margin-bottom: 2rem; }
+        .main .work-experience .timeline .timeline-item .timeline-heading .timeline-entry-name {
+          display: inline-block;
+          margin-right: 1rem;
+          font-size: 2rem;
+          font-weight: 400;
+          letter-spacing: 1px;
+          color: #262626;
+          text-transform: uppercase; }
+  .main .my-portfolio .grid {
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr)); }
+    .main .my-portfolio .grid .grid-item {
+      min-height: 35rem;
+      position: relative;
+      overflow: hidden; }
+      .main .my-portfolio .grid .grid-item .portfolio-item-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .main .my-portfolio .grid .grid-item .portfolio-item-info {
+        height: 100%;
+        background-color: #2c98f0;
+        color: #f4f4f4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity .5s; }
+        .main .my-portfolio .grid .grid-item .portfolio-item-info:hover {
+          opacity: 1; }
+        .main .my-portfolio .grid .grid-item .portfolio-item-info:hover .project-name,
+        .main .my-portfolio .grid .grid-item .portfolio-item-info:hover .project-type {
+          transform: translateY(0); }
+        .main .my-portfolio .grid .grid-item .portfolio-item-info .project-name {
+          font-size: 2rem;
+          letter-spacing: 1px;
+          margin-bottom: .7rem;
+          transform: translateY(-2rem);
+          transition: transform .5s; }
+          .main .my-portfolio .grid .grid-item .portfolio-item-info .project-name span {
+            font-weight: 300;
+            opacity: .5; }
+        .main .my-portfolio .grid .grid-item .portfolio-item-info .project-type {
+          font-size: 1.3rem;
+          opacity: .5;
+          transform: translateY(2rem);
+          transition: transform .5s; }
+        .main .my-portfolio .grid .grid-item .portfolio-item-info .info-cta {
+          margin-top: auto; }
+          .main .my-portfolio .grid .grid-item .portfolio-item-info .info-cta .info-btn {
+            color: #f4f4f4;
+            border: 1px solid #f4f4f4; }
+            .main .my-portfolio .grid .grid-item .portfolio-item-info .info-cta .info-btn:hover {
+              color: #262626;
+              background-color: rgba(255, 255, 255, 0.7);
+              border-color: transparent; }
+  .main .my-portfolio .load-more .btn-blue {
+    background-color: #2c98f0;
+    color: #f4f4f4;
+    margin-top: 2.5rem;
+    padding: 1rem 5rem; }
+    .main .my-portfolio .load-more .btn-blue:hover {
+      background-color: #2977b1; }
 
 @keyframes move-wheel {
   0% {
