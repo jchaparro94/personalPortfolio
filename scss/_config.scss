@@ -73,6 +73,17 @@ section:not(.hero) {
   transition: all .5s;
 }
 
+.btn-blue {
+  background-color: $blue-color;
+  color: $light-color;
+  margin-top: 2.5rem;
+  padding: 1rem 5rem;
+
+  &:hover {
+    background-color: #2977b1;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
