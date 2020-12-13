@@ -8,6 +8,7 @@ menuToggle.addEventListener('click', function () {
   heroElement.classList.add('is-open');
 });
 
+// Window event to close navbar when clicking outside
 window.addEventListener('click', function (e) {
   let clickedElement = e.target;
 
